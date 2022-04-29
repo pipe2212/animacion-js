@@ -19,9 +19,9 @@
     </header>
     <section>
        <img src="fondo.png" id="fondo" /> 
-       <img src="luna1.png" id="luna" />
-      <img src="montañas_fondo [Convertido].png" id="montañasFondo" />
-      <h2 id="text">Bienvenidos</h2>
+       <img src="luna.png" id="luna" />
+      <img src="montañas_fondo.png" id="montañasFondo" />
+      <h2 id="text">Hola</h2>
       <a href="#sec" id="btn">Explore</a>
       <img src="montañas_frente.png" id="montañasFrente" />
     </section>
@@ -69,11 +69,11 @@
       window.addEventListener("scroll",function(){
         let  value = window.scrollY;
         fondo.style.left = value * 0.25 + "px";
-        luna.style.top = value * 1.05 + "px";
+        luna.style.top = value * 1.20 + "px";
         montañasFondo.style.top = value * .4 + "px";
         montañasFrente.style.top = value * 0 + "px";
         text.style.marginRight = value * 4 + "px";
-        text.style.marginTop = value * 1.05 + "px";
+        text.style.marginTop = value * .04 + "px";
         btn.style.marginTop = value * 1.05 + "px";
       })
     </script>

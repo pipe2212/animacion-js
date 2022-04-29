@@ -67,6 +67,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 section::before
@@ -99,11 +100,11 @@ section img#montañasFrente {
 }
 
 #text {
-  position: absolute;
+  position:absolute;
   right: -350px;
   color: #fff;
   white-space: nowrap;
-  font-size: 7.5vw;
+  font-size: 8.5vw;
   z-index: 9;
 }
 #btn {
@@ -114,7 +115,8 @@ section img#montañasFrente {
   background: #fff;
   color: #2b1055;
   font-size: 1.5em;
-  transform: translateY(100px);
+  transform: translateY(-50px);
+  transform: translateX(-90px);
 }
 .sec{
   position: relative;
