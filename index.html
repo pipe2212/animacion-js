@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+       <img src="fondo.png" id="fondo" /> 
+       <img src="luna1.png" id="luna" />
+      <img src="montañas_fondo [Convertido].png" id="montañasFondo" />
+      <h2 id="text">Bienvenidos</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="montañas_frente.png" id="montañasFrente" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Efecto de scroll</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia accusamus
+        optio quos eligendi minima minus culpa. Harum pariatur adipisci
+        reiciendis, voluptate ducimus assumenda esse iusto ut sunt incidunt eos
+        sequi fugit minima tempora optio beatae ex ullam at officia voluptas
+        praesentium. Veniam cupiditate voluptate alias voluptas dolore repellat
+        repudiandae soluta nulla, natus odit qui quia necessitatibus sit nemo
+        distinctio corporis dolores, labore esse eaque beatae! Dolor voluptates
+        nesciunt deserunt quis eligendi expedita. Esse neque saepe praesentium
+        velit ipsa, illo ullam sunt reiciendis. Facere molestias iusto explicabo
+        consequuntur, repellat voluptate hic, dolore perferendis quia
+        exercitationem iste error, itaque ea. Omnis, asperiores?
+        <br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Recusandae, veniam. Adipisci dolor, iure est molestias atque expedita
+        incidunt, voluptas eligendi, veritatis corrupti dicta odit. Adipisci
+        officiis quaerat odit, vitae beatae minus iure magnam pariatur possimus,
+        saepe in dolore inventore? Placeat magni, eligendi quae architecto velit
+        expedita itaque quos ex beatae aliquam, ipsam dolores neque laudantium
+        obcaecati veritatis voluptatibus culpa esse unde consequatur. Nihil
+        numquam et alias veniam culpa ducimus fuga, magnam totam non voluptatum
+        ad neque fugit molestias, tempore a nisi quae corporis assumenda
+        voluptatem? Dolore, inventore? Ab repellendus recusandae pariatur ipsam
+        eveniet ut dicta cum tempore dolore modi sed autem, dignissimos earum
+        quasi sunt. Dignissimos ducimus dolorem officia commodi perspiciatis ad.
+        Commodi enim quod doloremque eius nulla numquam cupiditate, ipsum itaque
+        dolorem excepturi eveniet at in. Nostrum reprehenderit atque illo eius
+        accusamus earum voluptatem corrupti doloribus amet animi. Nobis sit
+        perferendis voluptatum commodi laboriosam. Eligendi ducimus sapiente vel
+        provident.
+      </p>
+    </div>
+    <script>
+      let fondo = document.getElementById("fondo");
+      let luna = document.getElementById("luna");
+      let montañasFondo = document.getElementById("montañasFondo");
+      let montañasFrente = document.getElementById("montañasFrente");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+
+      window.addEventListener("scroll",function(){
+        let  value = window.scrollY;
+        fondo.style.left = value * 0.25 + "px";
+        luna.style.top = value * 1.05 + "px";
+        montañasFondo.style.top = value * .4 + "px";
+        montañasFrente.style.top = value * 0 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginTop = value * 1.05 + "px";
+        btn.style.marginTop = value * 1.05 + "px";
+      })
+    </script>
+  </body>
+</html>
